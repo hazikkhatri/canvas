@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas | Draw And Download</title>
+    <link href="./output.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="flex flex-col h-screen overflow-hidden">
+        <section class="py-5 flex flex-col">
+            <div class="buttons flex gap-10 justify-center">
+                <div class="textColorPicker text-center">
+                    <div>Text Color Picker</div>
+                    <input type="color" class="w-44">
+                </div>
+                <div class="backgound text-center">
+                    <div>Background</div>
+                    <input type="color" class="w-44">
+                </div>
+                <div class="font_size text-center">
+                    <div>Font size</div>
+                    <input type="number" class="w-44 border border-black" value="3">
+                </div>
+            </div>
+            <div class="m-auto">
+                <canvas class="canvasScreen border border-blue-950 h-[80vh] w-[70vw] mt-2"></canvas>
+            </div>
+            <div class="flex mx-auto my-2 gap-10">
+                <div>
+                    <button class="border text-white bg-red-500  px-3 py-1">Clear</button>
+                </div>
+                <div>
+                    <button class="border text-white bg-green-500 px-3 py-1">Save & Download</button>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
